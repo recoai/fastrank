@@ -3,10 +3,7 @@
 #[macro_use]
 extern crate serde_derive;
 
-mod core;
-pub(crate) use crate::core::FeatureId;
-pub(crate) use crate::core::InstanceId;
-pub(crate) use crate::core::Scored;
+pub mod core;
 
 /// Contains code for feature-at-a-time non-differentiable optimization.
 pub mod coordinate_ascent;
