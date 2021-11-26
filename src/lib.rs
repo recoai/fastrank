@@ -4,7 +4,9 @@
 extern crate serde_derive;
 
 pub mod core;
-
+pub(crate) use crate::core::FeatureId;
+pub(crate) use crate::core::InstanceId;
+pub(crate) use crate::core::Scored;
 /// Contains code for feature-at-a-time non-differentiable optimization.
 pub mod coordinate_ascent;
 pub mod dataset;
